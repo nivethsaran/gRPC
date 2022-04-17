@@ -1,0 +1,1 @@
+.\protoc-3.20.0-win64\bin\protoc.exe helloworld.proto --python_out=. --grpclib_python_out=.
