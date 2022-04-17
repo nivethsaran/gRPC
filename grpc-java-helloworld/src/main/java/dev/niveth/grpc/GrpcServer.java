@@ -67,6 +67,7 @@ public class GrpcServer {
         @Override
         public void sayHello(HelloRequest req, StreamObserver<HelloReply> responseObserver) {
             HelloReply reply = HelloReply.newBuilder().setMessage("Hello " + req.getName()).build();
+            logger.info("Vamos");
             responseObserver.onNext(reply);
             responseObserver.onCompleted();
         }
